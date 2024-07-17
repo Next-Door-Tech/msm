@@ -1,3 +1,5 @@
+#!/bin/bash
+
 msm_dir="/opt/msm"
 msm_user="minecraft"
 msm_user_system=false

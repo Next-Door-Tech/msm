@@ -1,3 +1,5 @@
+#!/bin/bash
+
 BASE_URL="https://raw.githubusercontent.com/msmhq/msm/master/installers/"
 
 function check_os() {
