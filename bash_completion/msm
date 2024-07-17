@@ -12,6 +12,7 @@
 
 # Source, if it exists, the msm profile.d script
 if [ -f "/etc/profile.d/msm.sh" ]; then
+	# shellcheck source=/dev/null # ignore environment vars for shellcheck
 	source "/etc/profile.d/msm.sh"
 fi
 
@@ -21,6 +22,7 @@ MSM="${MSM_SCRIPT:-/etc/init.d/msm}"
 ### Auto Completion Function
 
 _msm() {
+	# shellcheck source=init/msm
 	source "$MSM"
 
 	local base current options
