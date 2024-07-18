@@ -1,8 +1,9 @@
 name: Run tests
 on:
   push:
-    branches-ignore:
-      - 'gh-pages'
+    branches:
+      - 'master'
+      - 'staging'
   pull_request:
     branches-ignore:
       - 'gh-pages'
