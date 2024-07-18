@@ -2,6 +2,7 @@
 
 UPDATE_URL="https://raw.githubusercontent.com/msmhq/msm/master"
 curl -L "${UPDATE_URL}/installers/common.sh" -o /tmp/msmcommon.sh  # wget isn't installed on Arch by default
+# shellcheck source=installers/common.sh
 source /tmp/msmcommon.sh && rm -f /tmp/msmcommon.sh
 
 # Installs sudo if it is not installed

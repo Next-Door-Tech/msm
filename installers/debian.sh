@@ -2,6 +2,7 @@
 
 UPDATE_URL="https://raw.githubusercontent.com/msmhq/msm/master"
 wget -q ${UPDATE_URL}/installers/common.sh -O /tmp/msmcommon.sh
+# shellcheck source=installers/common.sh
 source /tmp/msmcommon.sh && rm -f /tmp/msmcommon.sh
 
 # Installs sudo if it is not installed
