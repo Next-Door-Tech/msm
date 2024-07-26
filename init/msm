@@ -56,10 +56,6 @@ follow_links "$COMPLETION"; COMPLETION="$RETURN"
 
 ### Config variables the user should not need/want to change
 
-# Lazy allocation status
-ALLOCATED_SERVERS="false"
-ALLOCATED_WORLDS="false"
-
 # Global totals
 NUM_WORLDS=0
 NUM_SERVERS=0
