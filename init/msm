@@ -1152,6 +1152,7 @@ jargroup_getlatest() {
 						# The previous version is different:
 						# Add it to the group
 
+						# used for test.sh
 						[[ -f "$most_recent_jar" ]]
 						local was_previous="$?"
 
