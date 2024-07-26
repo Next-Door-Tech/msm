@@ -22,7 +22,7 @@ MSM="${MSM_SCRIPT:-/etc/init.d/msm}"
 _msm() {
 	source "$MSM"
 
-	local base current options
+	local current options
 	COMPREPLY=()
 
 	current="${COMP_WORDS[$COMP_CWORD]}"
