@@ -101,6 +101,7 @@ echoerr() {
 COLOUR_PURPLE="\e[1;35m"
 COLOUR_RED="\e[1;31m"
 COLOUR_CYAN="\e[1;36m"
+# shellcheck disable=SC2034
 COLOUR_GREEN="\e[1;32m"
 COLOUR_RESET="\e[0m"
 
