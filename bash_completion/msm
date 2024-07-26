@@ -25,7 +25,7 @@ _msm() {
 	# shellcheck source=init/msm
 	source "$MSM"
 
-	local base current options
+	local current options
 	COMPREPLY=()
 
 	current="${COMP_WORDS[$COMP_CWORD]}"

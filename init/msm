@@ -57,10 +57,6 @@ follow_links "$COMPLETION"; COMPLETION="$RETURN"
 
 ### Config variables the user should not need/want to change
 
-# Lazy allocation status
-ALLOCATED_SERVERS="false"
-ALLOCATED_WORLDS="false"
-
 # Global totals
 NUM_WORLDS=0
 NUM_SERVERS=0
@@ -3759,8 +3755,6 @@ server_worlds_allocate() {
 	server_property "$1" WORLD_STORAGE_PATH
 	server_property "$1" WORLD_STORAGE_INACTIVE_PATH
 
-	local world_name
-
 	# Record the index at which worlds for this server will start
 	SERVER_WORLD_OFFSET[$1]="$NUM_WORLDS"
 
@@ -3873,8 +3867,8 @@ get_closest_version() {
 	local given_type="${1%/*}"
 	local given_version="${1##*/}"
 
-	local closest_version cv_val
-	local v v_version v_type v_full v_val given_val
+	local closest_version
+	local v v_version v_type v_full
 
 	closest_version="0.0.0"
 
