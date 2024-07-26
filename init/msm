@@ -1154,6 +1154,7 @@ jargroup_getlatest() {
 						# Add it to the group
 
 						[[ -f "$most_recent_jar" ]]
+						# shellcheck disable=SC2034 # used for test.sh
 						local was_previous="$?"
 
 						as_user "$SETTINGS_USERNAME" "mv '$SETTINGS_JAR_STORAGE_PATH/$1/$SETTINGS_JARGROUP_DOWNLOAD_DIR/$file_name' '$SETTINGS_JAR_STORAGE_PATH/$1/$new_name'"
